@@ -1,0 +1,152 @@
+#cas{
+    position: absolute;
+    top: 45px;
+    z-index: -1;
+}
+#body{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+#form{
+    position: absolute;
+    /* left: 50%; */
+    margin-left: 150px;
+    top: 50%;
+    transform: translateY(-40%);
+    border: 1px solid black;
+    /* transform: translate(-120%,-40%); */
+}
+#show{
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 810px;
+    top: 50%;
+    color: white;
+    padding-left: 5px;
+    transform: translateY(-40%);
+}
+#form>input{
+    width: 530px;
+    height: 35px;
+}
+#header>span:nth-of-type(2)>a:hover{
+    background-color: rgba(182, 11, 20, 1);
+}
+#form>input,#form>textarea{
+    display: block;
+    margin-top: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 15px;
+    /*
+    wqt:规定textarea不可改变大小
+    */
+    resize: none;
+    background-color: rgba(128, 128, 163, 0.7);
+    border: 1px solid rgba(29,226,233,0.5);
+}
+#form>button:hover{
+    cursor: pointer;
+}
+#form>button{
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(29,226,233,0.5);
+    border-radius: 5px;
+    top: 500px;
+}
+#form>span:nth-of-type(1){
+    position: absolute;
+    font-size: 30px;
+    color: rgba(69,135,224,1);
+    text-shadow: 2px 2px 2px rgba(69,224,222,1);
+}
+#form>span:nth-of-type(2){
+    position: absolute;
+    top: 44px;
+    left: 480px;
+}
+#form>span:hover{
+    cursor: default;
+}
+#form>button>span{
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right,rgba(69,135,224,1),rgba(69,224,222,1));
+}
+#form>button>span:nth-of-type(1){
+    width: 20px;
+    height: 2px;
+    left: -19px;
+    top: -1px;
+    animation: move_span1 0.3s linear infinite;
+}
+#form>button>span:nth-of-type(2){
+    height: 20px;
+    width: 2px;
+    left: 68px;
+    top: -21px;
+    animation: move_span2 0.3s linear infinite;
+}
+#form>button>span:nth-of-type(3){
+    width: 20px;
+    height: 2px;
+    left: 70px;
+    top: 28px;
+    animation: move_span3 0.3s linear infinite;
+}
+#form>button>span:nth-of-type(4){
+    height: 20px;
+    width: 2px;
+    left: 0px;
+    top: 31px;
+    animation: move_span4 0.3s linear infinite;
+}
+#show>pre>p,#show>pre>h1{
+    position: absolute;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+#show>pre>h1{
+    position: absolute;
+}
+#show>pre>p{
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 50px;
+    height: 83%;
+}
+@keyframes move_span1 {
+    100%{
+        left: 71px;
+    }
+}
+@keyframes move_span2 {
+    100%{
+        top: 32px;
+    }
+}
+@keyframes move_span3 {
+    100%{
+        left: -20px;
+    }
+}
+@keyframes move_span4 {
+    100%{
+        top: -22px;
+    }
+}
+@keyframes sun_input{
+        100%{
+            background-position: bottom right;
+        }
+    }

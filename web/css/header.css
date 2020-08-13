@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+wqt:设置导航条背景样式及开启相对定位
+*/
+#header{
+    position: relative;
+    height: 45px;
+    background-color: white;
+}
+/*
+wqt:设置WYblog的位置
+*/
+#header>.WYblog{
+    position: absolute;
+    left: 170px;
+    top: 8px;
+}
+/*
+wqt:设置列表选项部分
+*/
+#header>.list1{
+    list-style: none;
+    position: absolute;
+    left: 284px;
+    display: flex;
+    box-sizing: border-box;
+    width: 210px;
+    height: 100%;
+    color: black;
+}
+#header>.list1>li{
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 45px;
+    text-align: center;
+    background-color: white;
+    /*
+    wqt:给颜色添加一个过渡效果
+    */
+    transition: background-color 0.3s linear;
+}
+#header>.list1>li:hover{
+    background-color: rgb(240, 240, 245);
+}
+/*
+wqt:设置artical的导航
+*/
+#header>.blog{
+    position: absolute;
+    left: 700px;
+    top: 5px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: rgba(69,135,224,1);
+    text-shadow: 2px 2px 5px rgba(128, 128, 163, 0.7);
+}
+#header>.list2{
+    list-style: none;
+    position: absolute;
+    left: 1000px;
+    top: 7px;
+    display: flex;
+    box-sizing: border-box;
+    height: 70%;
+    color: black;
+}
+#header>.list2>li{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+    background-color: rgba(202, 12, 22, 1);
+}
+#header>.list2>li:hover{
+    background-color: rgba(182, 11, 20, 1);
+}
+#header>.pic{
+    position: absolute;
+    display: flex;
+    left: 1200px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+}
+#header>.pic>img{
+    width: 100%;
+    height: auto;
+}
+#header>input{
+    position: absolute;
+    background: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 565px;
+    border-radius: 5px;
+    top: 7px;
+    background-color: rgba(240, 240, 245, 1);
+}
+/*
+wqt:设置搜索图片的位置
+*/
+#header>.searchImg{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 935px;
+    top: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: url("/img/search.png") no-repeat;
+    background-color: white;
+}
+#header>.write{
+    position: absolute;
+    left: 1100px;
+    top: 7px;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: rgb(227, 62, 51);
+}
+#header>.write>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#header>.LoginOrRegister{
+    position: absolute;
+    left: 1200px;
+    top: 7px;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: white;
+    /*
+    wqt:给颜色添加一个过渡效果
+    */
+    transition: background-color 0.3s linear;
+}
+#header>.LoginOrRegister>a{
+    text-decoration: none;
+    color: black;
+}
+#header>.list1>li:hover,#header>.searchImg:hover,#header>.list2>li:hover{
+    cursor: pointer;
+}

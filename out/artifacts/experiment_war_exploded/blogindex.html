@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/blogindex.css">
+    <link rel="stylesheet" href="css/blogindexheader.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/changecolor.js"></script>
+    <script src="js/createLoginImg_judge.js"></script>
+    <script src="js/blogindex.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="header">
+        <ul class="list1">
+            <li>博客</li>
+            <li title="论坛">论坛</li>
+            <li title="问答">问答</li>
+            <li title="招聘">招聘</li>
+        </ul>
+        <span class="WYblog"><img src="img/WYblog.png" ></span>
+        <input type="text" placeholder="搜WYblog">
+        <span class="searchImg"></span>
+        <span class="write"><a href="">创作中心</a></span>
+        <span class="LoginOrRegister"><a href="page/login.html">登录/注册</a></span>
+        <ul class="list3"></ul>
+    </div>
+    <div id="left">
+        <ul>
+            <li id="firstli">推荐</li>
+            <li>动态</li>
+            <li>程序人生</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>百万人学AI</li>
+            <li>前端</li>
+            <li>架构</li>
+            <li>区块链</li>
+            <li>数据库</li>
+            <li>5G</li>
+            <li>游戏开发</li>
+            <li>移动开发</li>
+            <li>运维</li>
+            <li>安全</li>
+            <li>云计算/大数据</li>
+            <li>研发管理</li>
+            <li>物联网</li>
+            <li>计算机基础</li>
+            <li>音视频开发</li>
+            <li>其他</li>
+        </ul>
+    </div>
+    <div id="right">
+        <div>
+            <span>上一张</span>
+            <ul class="view">
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
+            <span>下一张</span>
+        </div>
+        <blog v-for="(obj,key) in arr" :obj="obj" :key="key"></blog>
+    </div>
+    <script>
+        blogindex();
+        createLoginImg_judge();
+        var $li=$("#left>ul>li");
+        changeColor($li);
+    </script>
+</body>
+</html>

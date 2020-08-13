@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/ajax.js"></script>
+</head>
+<body>
+    <div id="register_box">
+        <div id="title">
+            <span class="line"></span>
+            <span class="text">注册</span>
+            <span class="line"></span>
+        </div>
+        <form action="../LoginOrRegister" method="get" id="form">
+            <div class="input_box" id="username_box">
+                <input type="text" id="username" placeholder="用户名" name="username">
+                <span id="nameCheck"></span>
+            </div>
+            <div class="input_box" id="safetyLevel_box">
+                <span id="level"></span>
+                <ul id="levelColor">
+                    <li id="levelRed"></li>
+                    <li id="levelOrange"></li>
+                    <li id="levelGreen"></li>
+                </ul>
+                <span id="levelTip"></span>
+            </div>
+            <div class="input_box" id="pwd_box">
+                <input type="password" id="password" placeholder="密码（6-16位字符组成，区分大小写）" name="password">
+                <span id="pwdCheck"></span>
+            </div>
+            <div class="input_box" id="sex_box">
+                    <span class="sextip">性别:</span>
+                    <input type="radio" name="sex" value="male" id="maleRadio">
+                    <label id="male" for="maleRadio">男</label>
+                    <input type="radio" name="sex" value="female" id="femaleRadio">
+                    <label id="female" for="femaleRadio">女</label>
+                    <input type="radio" name="sex" value="" id="secretRadio" checked>
+                    <label id="secret" for="secretRadio" >保密</label>
+                    <span id="sexCheck"></span>
+            </div>
+            <div class="input_box" id="birth_box" name="birth">
+                <span class="birthtip">出生日期:</span>
+                <input type="date" id="birth">
+                <span id="birthCheck"></span>
+            </div>
+            <div class="input_box" id="int_box" name="introduction">
+                <span class="inttip">个人简介:</span>
+                <textarea name="introduction" id="introduction" placeholder="请输入你的简介，不超过100个字符" maxlength="100"></textarea>
+                <span id="intCheck"></span>
+            </div>
+            <div class="input_box" id="button_box">
+                <input type="submit" id="button" value="注册" name="submit">
+            </div>
+        </form>
+        <div id="jump_box">
+            <a href="login.html">已有帐号，直接登录></a>
+        </div>
+    </div>
+    <script>
+        register();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/articallist.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/changecolor.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/articallist.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <ul class="list1">
+            <li>博客</li>
+            <li title="论坛">论坛</li>
+            <li title="问答">问答</li>
+            <li title="招聘">招聘</li>
+        </ul>
+        <span class="WYblog"><img src="../img/WYblog.png" ></span>
+        <input type="text" placeholder="搜WYblog">
+        <span class="searchImg"></span>
+        <span class="write"><a href="../md/artical.html">创作中心</a></span>
+        <div class="pic"><img src="" alt=""></div>
+    </div>
+    <div id="body">
+        <ul>
+            <li>文章管理</li>
+            <li>分类专栏</li>
+            <li>订阅专栏</li>
+            <li>博客搬家</li>
+            <li>博客打赏</li>
+            <li>博客设置</li>
+            <li>自定义模块</li>
+            <li>自定义域名</li>
+            <li>博客等级权益</li>
+        </ul>
+        <div id="right">
+            <paragraph v-for="(obj,key) in arr" :obj="obj" :key="key"></paragraph>
+        </div>
+    </div>
+    <script>
+        articallist();
+    </script>
+</div>
+</body>
+</html>

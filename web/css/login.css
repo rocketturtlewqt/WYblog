@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+wqt:body部分
+*/
+#body{
+    position: relative;
+    height: 650px;
+    /* background: url("../img/loginback.gif") no-repeat; */
+}
+#login{
+    position: absolute;
+    width: 825px;
+    height: 522.5px;
+    background-color: rgba(128, 128, 163, 0.7);
+    /*
+    wqt:伸缩盒子排版
+    */
+    display: flex;
+    /*
+    wqt:相对于父元素水平垂直居中
+    */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/*
+wqt:设置左边的描述样式
+*/
+#describe{
+    color: white;
+    width: 352.5px;
+    box-sizing: border-box;
+}
+#describe>h1{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#describe>p{
+    width: 265px;
+    letter-spacing: 5px;
+    margin: 30px auto;
+}
+#describe>#favor{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(255, 102, 102, 1);
+    border: 1px solid rgba(255, 102, 102, 1);
+    margin-left: 40px;
+}
+#login>#login_right{
+    position: relative;
+    width: 472.5px;
+    height: 100%;
+    background-color: white;
+}
+/*
+wqt:设置右边的登录注册样式
+*/
+#login_right>ul:nth-of-type(1){
+    position: absolute;
+    list-style: none;
+    border-bottom: 2px solid rgba(245,245,245,1);
+    box-sizing: border-box;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,50px);
+}
+#login_right>ul:nth-of-type(1)>li{
+    padding: 10px;
+    /*
+    wqt:实现文字不换行显示
+    */
+    white-space: nowrap;
+}
+#login_right>ul:nth-of-type(1)>li:nth-of-type(1){
+    margin-left: 0px;
+    margin-right: 20px;
+    border-bottom: 2px solid red;
+}
+#login_right>ul:nth-of-type(1)>li:hover,#login_right>ul:nth-of-type(2)>li:hover,
+#user_pw>a:hover,#describe>#favor:hover,#user_pw>span,#header>span:nth-of-type(2),
+#header>ul>li:hover,#header>span:nth-of-type(1):hover{
+    cursor: pointer;
+}
+#user_pw{
+    position: absolute;
+    width: 250px;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#user_pw>input:nth-of-type(1),#user_pw>input:nth-of-type(2){
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 34px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid rgba(204,204,204,1);
+    margin-bottom: 20px;
+}
+/*
+wqt:设置placeholder颜色
+*/
+#user_pw>input:nth-of-type(1)::-webkit-input-placeholder,
+#user_pw>input:nth-of-type(2)::-webkit-input-placeholder{
+    color: rgba(217,214,214,1);
+}
+#user_pw>input:nth-of-type(1)::-moz-placeholder,
+#user_pw>input:nth-of-type(2)::-moz-placeholder{
+    color: rgba(217,214,214,1);
+}
+#user_pw>input:nth-of-type(1)::-ms-input-placeholder,
+#user_pw>input:nth-of-type(2)::-ms-input-placeholder{
+    color: rgba(217,214,214,1);
+}
+#user_pw>span:nth-of-type(1){
+    position: absolute;
+    right: 3px;
+    top: 5px;
+}
+#user_pw>span:nth-of-type(2){
+    position: absolute;
+    right: 5px;
+    top: 62px;
+}
+#user_pw>span:nth-of-type(3){
+    position: absolute;
+    font-size: 5px;
+    color: red;
+    display: block;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 100px;
+}
+#user_pw>span:nth-of-type(1)>img{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+#user_pw>a{ 
+    position: absolute;
+    right: 0;
+    color: rgba(128, 92, 128, 1);
+}
+#user_pw>input:nth-of-type(3){
+    width: 100%;
+    height: 39px;
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(245, 245, 245, 1);
+    top: 150px;
+}
+#login_right>ul:nth-of-type(2){
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+#login_right>ul:nth-of-type(2)>li{
+    margin: 0 3px;
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(2){
+    color: rgba(235, 235, 235,1);
+}
+#login_right>ul:nth-of-type(2)>li>a{
+    font-size: 14px;
+    color: rgba(51, 153, 234, 1);
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(3)~li{
+    border-radius: 5px;
+    width: 30px;
+    height: 27px;
+    background-image: url("../img/log.png");
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(5){
+    background-position: 184px 0;
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(6){
+    background-position: 146px 0;
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(7){
+    background-position: 109px 0;
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(8){
+    background-position: 71px 0;
+}
+#login_right>ul:nth-of-type(2)>li:nth-of-type(9){
+    background-position: 32px 0;
+}
+/*
+wqt:canvas
+*/
+#canvas{
+    position: absolute;
+    top: 45px;
+    z-index: -1;
+}

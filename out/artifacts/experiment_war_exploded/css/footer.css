@@ -1,0 +1,25 @@
+/*
+wqt:footer部分
+*/
+#footer{
+    position: relative;
+}
+#footer>ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer>ul>li{
+    padding-left: 10px;
+}
+#footer>ul>li>a{
+    color: rgba(153, 154, 170, 1);
+}
+#footer>ul>li>span{
+    position: absolute;
+    left: 362px;
+    top: 2px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/artical.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/draw-artical.js"></script>
+    <script src="../js/selfcenterAndLogout.js"></script>
+    <script src="../js/getDate.js"></script>
+    <script src="../js/artical.js"></script>
+    <script src="../js/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div id="header">
+    <span class="WYblog"><img src="../img/WYblog.png"></span>
+    <span class="blog">写博客</span>
+    <ul class="list2">
+        <li>个人中心</li>
+        <li>注销</li>
+    </ul>
+    <div class="pic"><img src=""></div>
+</div>
+<div id="body">
+    <div id="form">
+        <span>添加文章</span>
+        <input type="text" v-model="title" @keyup="titleChange" maxlength="20" placeholder="标题"><span>0/20</span><br>
+        <textarea v-model="content"  cols="70" rows="20" placeholder="内容"></textarea>
+        <button>
+            发布文章
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div id="show">
+        <pre>
+            <h1>{{title}}</h1>
+            <p>{{content}}</p>
+        </pre>
+    </div>
+</div>
+<canvas id="cas" ></canvas>
+<script>
+   artical();
+</script>
+</body>
+</html>

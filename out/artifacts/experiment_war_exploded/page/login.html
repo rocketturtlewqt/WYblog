@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/bg-login.js"></script>
+    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>login</title>
+</head>
+<body>
+    <div id="header">
+        <ul class="list1">
+            <li>博客</li>
+            <li title="论坛">论坛</li>
+            <li title="问答">问答</li>
+            <li title="招聘">招聘</li>
+        </ul>
+        <span class="WYblog"><img src="../img/WYblog.png" ></span>
+        <input type="text" placeholder="搜WYblog">
+        <span class="searchImg"></span>
+        <span class="write"><a href="#">创作中心</a></span>
+    </div>
+        <!--
+        <canvas>画布 画板 画画的本子
+    -->
+    <div id="body">
+        <div id="login">
+            <div id="describe">
+                <h1>Visual Basic</h1>
+                <p>
+                    1991年4月，微软发布Visual Basic 1.0 for Windows版本，由Alan Cooper设计开发，是第一个可视编程软件。它源于编程语言Basic,拥有图形用户界面和快速应用程序开发系统，可以轻易使用DAO、RDO、ADO连接数据库，或者轻松创建 ActiveX控件。 1991年4月，微软发布 Visual Basic 1.0 for Windows版
+                </p>
+                <!--wqt:onselectstart取消单击鼠标文字选中-->
+                <span id="favor" onselectstart="return false">0</span>
+            </div>
+            <div id="login_right">
+                <ul>
+                    <li>账号密码登录</li>
+                    <li>账号密码注册</li>
+                </ul>
+                <div id="user_pw">
+                    <input type="text" name="username" placeholder="手机号/邮箱/用户名"><span><img src="../img/cha.png"></span>
+                    <input type="password" name="password" placeholder="密码" pattern="^[A-z]+[0-9]*$" minlength="6"><span><img src="../img/eye.png"></span>
+                    <span onselectstart="return false"></span>
+                    <a href="#">忘记密码</a>
+                    <input type="button" value="登录" name="submit" disabled>
+                </div>
+                <ul>
+                    <li><a href="#">微信注册登录</a></li>
+                    <li>|</li>
+                    <li><a href="#">WYblog App扫码</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li>|</li>
+            <li><a href="#">客服论坛</a></li>
+            <li>|</li>
+            <li><span><img src="../img/email.png"></span><a href="#">1600639146@qq.com</a></li>
+        </ul>
+    </div>
+    <canvas style="background:#000000;" id="canvas"></canvas>
+
+    <!--
+        javascript
+        画笔
+    --> 
+    <script>
+        drawbglogin();
+        login();
+    </script>
+</body>
+</html>

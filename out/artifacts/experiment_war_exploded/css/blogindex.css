@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(245, 246, 247);
+}
+#left {
+    width: 90px;
+    margin-left: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    position: fixed;
+}
+#right {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 310px;
+}
+#left ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: rgb(112, 112, 112);
+    background-color: white;
+}
+.listcolor {
+    background-color: rgb(227, 62, 51);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#left>ul>li:nth-of-type(1){
+    background-color: rgb(227, 62, 51);
+    color: rgb(255, 255, 255);
+}
+#left>ul>li:hover{
+    cursor: pointer;
+}
+#right>div:nth-of-type(1){
+    position: relative;
+    height: 256px;
+}
+#right>div:nth-of-type(1)~div{
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+#right>div:nth-of-type(1)~div>a{
+    text-decoration: none;
+    color: black;
+}
+#right>div:nth-of-type(1)~div>a:hover{
+    color: rgb(202, 12, 22);
+}
+#right>div:nth-of-type(1)~div>ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+#right>div:nth-of-type(1)~div>ul>li{
+    line-height: 40px;
+    margin-right: 10px;
+}
+#right>div:nth-of-type(1)~div>ul>li:nth-of-type(1){
+    display: flex;
+    margin-top: 5px;
+}
+#right>div:nth-of-type(1)~div>ul>li:nth-of-type(1)>img{
+    width: 100%;
+    height: auto;
+}
+#right>div:nth-of-type(1)~div>ul>li:nth-of-type(3){
+    overflow: hidden;
+    color: rgb(138,138,138);
+}
+#right>div:nth-of-type(1)~div>ul>li:nth-of-type(1){
+    margin-top: 5px;
+}
+#right>div:nth-of-type(1)~div>ul>li:nth-of-type(1){
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+/*
+设置切割轮番图
+*/
+.view{
+    list-style: none;
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+}
+.view>li{
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.view>li>span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.view>li>span:nth-of-type(1){
+    transform: translateZ(100px);
+    background-image: url("../img/高清背景图片 (286).jpg");
+}
+.view>li>span:nth-of-type(2){
+    transform: translateY(-100px) rotateX(90deg);
+    background: url("../img/高清背景图片 (288).jpg");
+}
+.view>li>span:nth-of-type(3){
+    transform: translateZ(-100px) rotateX(180deg);
+    background: url("../img/高清背景图片 (299).jpg");
+}
+.view>li>span:nth-of-type(4){
+    transform: translateY(100px) rotateX(-90deg);
+    background: url("../img/高清背景图片 (300).jpg");
+}
+.view>li:nth-of-type(2)>span{
+    background-position: -80px 0;
+}
+.view>li:nth-of-type(3)>span{
+    background-position: -160px 0;
+}
+.view>li:nth-of-type(4)>span{
+    background-position: -240px 0;
+}
+.view>li:nth-of-type(5)>span{
+    background-position: -320px 0;
+}
+#right>div:nth-of-type(1)>span{
+    position: absolute;
+    display:block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: rgba(110,153,235,1);
+    transition: box-shadow 0.3s linear,background-color 0.3s linear;
+}
+#right>div:nth-of-type(1)>span:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 2px gray;
+    background-color: yellowgreen;
+}
+#right>div:nth-of-type(1)>span:nth-of-type(1){
+    top: 50%;
+    transform: translateY(-50%);
+}
+#right>div:nth-of-type(1)>span:nth-of-type(2){
+    left: 810px;
+    top: 50%;
+    transform: translateY(-50%);
+}

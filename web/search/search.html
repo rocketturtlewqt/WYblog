@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blogindexheader.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/createLoginImg_judge.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/search.js"></script>
+    <title>search</title>
+    <script>
+        search();
+    </script>
+</head>
+<body>
+<div id="header">
+    <ul class="list1">
+        <li>博客</li>
+        <li title="论坛">论坛</li>
+        <li title="问答">问答</li>
+        <li title="招聘">招聘</li>
+    </ul>
+    <span class="WYblog"><img src="../img/WYblog.png" ></span>
+    <input type="text" placeholder="搜WYblog">
+    <span class="searchImg"></span>
+    <span class="write"><a href="">创作中心</a></span>
+    <span class="LoginOrRegister"><a href="../page/login.html">登录/注册</a></span>
+</div>
+<div id="right">
+<!--    wqt:动态渲染博文组件-->
+    <blog v-for="(obj,key) in arr" :obj="obj" :key="key"></blog>
+</div>
+</body>
+</html>

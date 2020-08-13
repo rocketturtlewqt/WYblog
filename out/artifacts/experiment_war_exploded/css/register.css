@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../img/backgroundpicture.webp");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#register_box {
+    width: 800px;
+    margin: 160px auto;
+    text-align: center;
+    background-color: rgba(255, 255,255, 0.3);
+}
+#register_box #title .line {
+    display: inline-block;
+    width: 300px;
+    border-top: 1px rgb(221,221,221) solid ;
+    vertical-align: 15px;
+}
+#register_box #title .text {
+    font-size: 40px;
+    margin: 0 15px;
+}
+#register_box #title {
+    margin-bottom: 70px;
+}
+#register_box .input_box {
+    width: 420px;
+    height: 35px;
+    margin: 40px auto;
+}
+#register_box #username_box,
+#register_box #pwd_box {
+    width: 800px;
+    text-align: right;
+}
+#register_box #username_box {
+    margin-bottom: 10px;
+}
+#register_box #pwd_box {
+    margin-top: 10px;
+}
+#username_box #nameCheck,
+#pwd_box #pwdCheck {
+    display: inline-block;
+    width: 145px;
+    text-align: left;
+    padding-left: 20px;
+}
+.input_box #username,
+.input_box #password {
+    width: 420px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px rgb(221,221,221) solid;
+    padding-left: 20px;
+    background-color: rgba(255, 255,255, 0.6);
+    /* margin: 20px 0; */
+}
+#register_box #safetyLevel_box {
+    text-align: left;
+    margin: 0 auto;
+    height: 20px;
+}
+#levelColor {
+    display: inline-block;
+}
+#levelColor li {
+    text-decoration: none;
+    display: inline-block;
+    width: 35px;
+    height: 7px;
+    /* border: 1px red solid; */
+    /* background-color: red; */
+    border-radius: 5px;
+    margin: 0 10px;
+    vertical-align: middle;
+    /* visibility: hidden; */
+}
+#safetyLevel_box #levelTip {
+    margin-left: 135px;
+    /* visibility: hidden; */
+}
+#sex_box {
+    text-align: left;
+}
+#sex_box #maleRadio,
+#sex_box #femaleRadio,
+#sex_box #secretRadio {
+    display: none;
+}
+#sex_box #male,
+#sex_box #female,
+#sex_box #secret {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    border: 1px rgb(221,221,221) solid;
+    background-color: rgba(244,244,244,0.6);
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-size: 16px;
+}
+#sex_box #male:hover,
+#sex_box #female:hover,
+#sex_box #secret:hover {
+    cursor: pointer;
+}
+#sex_box #male,
+#sex_box #female {
+    width: 30px;
+}
+#sex_box #secret {
+    width: 40px;
+    padding: 1px 0;
+    background-color: rgb(34,161,214);
+    color: white;
+}
+#sex_box .sextip {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#birth_box {
+    text-align: left;
+}
+#birth_box #birth {
+    width: 190px;
+    height: 30px;
+    border: 1px rgb(221,221,221) solid;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: rgba(255, 255,255, 0.6);
+}
+#birth_box #birthCheck {
+    padding-left: 20px;
+}
+#register_box #int_box {
+    text-align: right;
+    width: 800px;
+}
+#int_box #introduction {
+    vertical-align: top;
+    margin-left: 20px;
+    resize: none;
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(255, 255,255, 0.6);
+}
+#int_box #intCheck {
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+    padding-left: 20px;
+}
+#button_box #button {
+    width: 420px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    border: 1px rgb(221,221,221) solid;
+    border-radius: 5px;
+    background-color: rgb(0,161,214);
+    color: rgb(255,255,255);
+}
+#button_box #button:hover {
+    background-color: rgb(51,180,222);
+    cursor: pointer;
+}
+#register_box #jump_box {
+    margin: 0 auto;
+    width: 420px;
+    margin-top: -35px;
+    text-align: right;
+}
+#jump_box a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0,161,214);
+}
+input {
+    outline: none;
+}
+textarea {
+    outline: none;
+}

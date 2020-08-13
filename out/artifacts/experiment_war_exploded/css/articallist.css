@@ -1,0 +1,105 @@
+/*
+设置body部分
+*/
+body{
+    background-color: rgba(245,246,247,1);
+}
+#body{
+    /* background-color: rgba(245,246,247,1); */
+    display: flex;
+}
+/* #body::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+#body>ul{
+    /* float: left; */
+    list-style: none;
+    width: 208.3px;
+    height: 340px;
+    margin-left: 180px;
+    margin-top: 13px;
+    background-color: white;
+}
+#body>ul>li{
+    width: 208.3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+#body>ul>li:nth-of-type(1){
+    background-color: rgba(227, 62, 51, 1);
+    color: white;
+}
+#body>ul>li:hover{
+    cursor: pointer;
+    /* background-color: rgba(253, 227, 228, 1);
+    color: rgba(202, 12, 22, 1); */
+}
+#right{
+    width: 60%;
+    /* float: left; */
+    margin-top: 13px;
+    margin-left: 5px;
+}
+/*
+wqt:设置一篇篇文章的及结构
+*/
+#right>div{
+    width: 800px;
+    box-sizing: border-box;
+    padding: 15px 0 15px 30px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+        /*
+wqt:结局高度塌陷问题
+*/
+#right>div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#right>div>span:nth-of-type(1)>a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#right>div>span:nth-of-type(1):hover{
+    cursor: pointer;
+}
+#right>div>span:nth-of-type(1)~span{
+    float: left;
+    font-size: 12px;
+    margin-top: 12px;
+    color: rgba(153,153,153,1);
+}
+#right>div>span:nth-of-type(3){
+    margin-left: 30px;
+}
+#right>div>ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+#right>div>ul>li{
+    font-size: 12px;
+    padding: 0 5px;
+}
+#right>div>ul>li:hover{
+    cursor: pointer;
+}
+#right>div>ul>li:nth-of-type(1){
+    color: rgb(52, 158, 223);
+}
+#right>div>ul>li:nth-of-type(2){
+    color: rgba(153,153,153,1);
+}
+#right>div>ul>li:nth-of-type(3){
+    color: rgb(202, 12, 22);
+}
